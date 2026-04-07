@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighSport | Nuevo producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="editor-page">
+    <header class="topbar">
+      <a class="wordmark" href="panel.html"><span>HIGH</span>SPORT</a>
+      <nav class="topnav">
+        <a href="panel.html">Dashboard</a>
+        <a class="active" href="dashboard.html">Inventario</a>
+        <a href="registro-usuario.html">Usuarios</a>
+      </nav>
+      <div class="avatar">KS</div>
+    </header>
+
+    <main class="editor-shell">
+      <div class="breadcrumb">
+        <a href="dashboard.html">Inventario</a>
+        <span>/</span>
+        <strong>Nuevo producto</strong>
+      </div>
+
+      <section class="editor-layout">
+        <article class="product-form-card">
+          <form class="form-stack">
+            <label for="producto">NOMBRE DEL PRODUCTO</label>
+            <input
+              id="producto"
+              type="text"
+              placeholder="Ej: Nike Air Max 270"
+            />
+
+            <div class="split-fields">
+              <div>
+                <label for="precio">PRECIO ($)</label>
+                <input id="precio" type="text" placeholder="0" />
+              </div>
+              <div>
+                <label for="cantidad">CANTIDAD</label>
+                <input id="cantidad" type="number" placeholder="0" />
+              </div>
+            </div>
+
+            <label for="categoria">CATEGORÍA</label>
+            <select id="categoria">
+              <option>Seleccionar categoría</option>
+              <option>Calzado</option>
+              <option>Equipos</option>
+              <option>Ropa</option>
+              <option>Accesorios</option>
+            </select>
+
+            <div class="form-actions">
+              <a class="btn btn-secondary" href="dashboard.html">Cancelar</a>
+              <a class="btn btn-primary" href="dashboard.html"
+                >Guardar Producto</a
+              >
+            </div>
+          </form>
+        </article>
+
+        <aside class="product-showcase">
+          <div class="showcase-words">
+            <span class="red">HIGH</span>
+            <span class="white">SPORT</span>
+          </div>
+          <img
+            class="shoe shoe--runner"
+            src="img/botaroja.png"
+            alt="Bota roja de fútbol"
+          />
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--transparent">
+      © 2026 High Sport. Todos los derechos reservados. |
+      <a href="#">Política de privacidad</a> |
+      <a href="#">Términos y condiciones</a> | <a href="#">Soporte</a> |
+      Contacto: soporte@highsport.com
+    </footer>
+  </body>
+</html>

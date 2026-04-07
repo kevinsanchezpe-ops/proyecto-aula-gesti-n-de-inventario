@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighSport | Editar producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="editor-page">
+    <header class="topbar">
+      <a class="wordmark" href="panel.html"><span>HIGH</span>SPORT</a>
+      <nav class="topnav">
+        <a href="panel.html">Dashboard</a>
+        <a class="active" href="dashboard.html">Inventario</a>
+        <a href="registro-usuario.html">Usuarios</a>
+      </nav>
+      <div class="avatar">KS</div>
+    </header>
+
+    <main class="editor-shell">
+      <div class="editor-header-row">
+        <div class="breadcrumb">
+          <a href="dashboard.html">Inventario</a>
+          <span>/</span>
+          <strong>Editar producto</strong>
+        </div>
+        <div class="product-id">ID: #0042</div>
+      </div>
+
+      <section class="editor-layout">
+        <article class="product-form-card">
+          <div class="editing-banner">Editando: Nike Air Max 270</div>
+          <form class="form-stack">
+            <label for="producto-editar">NOMBRE DEL PRODUCTO</label>
+            <input id="producto-editar" type="text" value="Nike Air Max 270" />
+
+            <div class="split-fields">
+              <div>
+                <label for="precio-editar">PRECIO ($)</label>
+                <input id="precio-editar" type="text" value="$380.000" />
+              </div>
+              <div>
+                <label for="cantidad-editar">CANTIDAD</label>
+                <input id="cantidad-editar" type="number" value="42" />
+              </div>
+            </div>
+
+            <label for="categoria-editar">CATEGORÍA</label>
+            <select id="categoria-editar">
+              <option selected>Calzado</option>
+              <option>Equipos</option>
+              <option>Ropa</option>
+              <option>Accesorios</option>
+            </select>
+
+            <div class="form-actions form-actions--three">
+              <button class="btn btn-danger" type="button">Eliminar</button>
+              <a class="btn btn-secondary" href="dashboard.html">Cancelar</a>
+              <a class="btn btn-primary" href="dashboard.html"
+                >Guardar Cambios</a
+              >
+            </div>
+          </form>
+        </article>
+
+        <aside class="product-showcase product-showcase--stacked">
+          <div class="showcase-repeat">
+            <span>HIGHSPORT</span>
+            <span>HIGHSPORT</span>
+            <span>HIGHSPORT</span>
+            <span>HIGHSPORT</span>
+          </div>
+          <img
+            class="shoe shoe--boot"
+            src="img/guayo-rojo.png"
+            alt="Guayo deportivo rojo"
+          />
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--transparent">
+      © 2026 High Sport. Todos los derechos reservados. |
+      <a href="#">Política de privacidad</a> |
+      <a href="#">Términos y condiciones</a> | <a href="#">Soporte</a> |
+      Contacto: soporte@highsport.com
+    </footer>
+  </body>
+</html>

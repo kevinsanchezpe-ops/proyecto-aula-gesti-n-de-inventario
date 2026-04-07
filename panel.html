@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighSport | Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="panel-page">
+    <header class="topbar">
+      <a class="wordmark" href="panel.html"><span>HIGH</span>SPORT</a>
+      <nav class="topnav">
+        <a class="active" href="panel.html">Dashboard</a>
+        <a href="dashboard.html">Inventario</a>
+        <a href="registro-usuario.html">Usuarios</a>
+      </nav>
+      <div class="avatar">KS</div>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="section-intro section-intro--panel">
+        <div>
+          <p class="eyebrow">PANEL GENERAL</p>
+          <h1>Resumen operativo del almacén</h1>
+          <p class="panel-lead">
+            Control visual del inventario, usuarios y movimientos principales de
+            HighSport.
+          </p>
+        </div>
+        <div class="panel-cta-group">
+          <a class="btn btn-primary" href="nuevo-producto.html"
+            >Registrar producto</a
+          >
+          <a class="btn btn-outline-red" href="dashboard.html"
+            >Ver inventario</a
+          >
+        </div>
+      </section>
+
+      <section class="stats-grid stats-grid--panel">
+        <article class="stat-card stat-card--accent">
+          <span>PRODUCTOS REGISTRADOS</span>
+          <strong>148</strong>
+          <small>Inventario actualizado hoy</small>
+        </article>
+        <article class="stat-card">
+          <span>STOCK BAJO</span>
+          <strong class="text-red">12</strong>
+          <small>Productos que requieren reposición</small>
+        </article>
+        <article class="stat-card">
+          <span>USUARIOS ACTIVOS</span>
+          <strong>8</strong>
+          <small>Administradores y auxiliares</small>
+        </article>
+        <article class="stat-card">
+          <span>VALOR TOTAL</span>
+          <strong>$24.450.600</strong>
+          <small>Valor estimado del almacén</small>
+        </article>
+      </section>
+
+      <section class="panel-grid">
+        <article class="panel-card panel-card--hero">
+          <div class="panel-card__header">
+            <p class="eyebrow">MOVIMIENTO</p>
+            <h2>Estado del inventario</h2>
+          </div>
+          <div class="stock-bars">
+            <div class="stock-row">
+              <span>Disponible</span>
+              <div class="stock-track">
+                <div
+                  class="stock-fill stock-fill--green"
+                  style="width: 82%"
+                ></div>
+              </div>
+              <strong>82%</strong>
+            </div>
+            <div class="stock-row">
+              <span>Stock bajo</span>
+              <div class="stock-track">
+                <div
+                  class="stock-fill stock-fill--yellow"
+                  style="width: 14%"
+                ></div>
+              </div>
+              <strong>14%</strong>
+            </div>
+            <div class="stock-row">
+              <span>Agotado</span>
+              <div class="stock-track">
+                <div class="stock-fill stock-fill--red" style="width: 4%"></div>
+              </div>
+              <strong>4%</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel-card">
+          <div class="panel-card__header">
+            <p class="eyebrow">ACCESO RÁPIDO</p>
+            <h2>Gestión de procesos</h2>
+          </div>
+          <div class="quick-links">
+            <a class="quick-link" href="dashboard.html">
+              <span class="quick-link__title">Consultar inventario</span>
+              <span class="quick-link__meta"
+                >Ver productos, filtros y estados</span
+              >
+            </a>
+            <a class="quick-link" href="nuevo-producto.html">
+              <span class="quick-link__title">Registrar producto</span>
+              <span class="quick-link__meta"
+                >Agregar un nuevo artículo al sistema</span
+              >
+            </a>
+            <a class="quick-link" href="editar-producto.html">
+              <span class="quick-link__title">Editar producto</span>
+              <span class="quick-link__meta"
+                >Actualizar precio, cantidad y categoría</span
+              >
+            </a>
+            <a class="quick-link" href="registro-usuario.html">
+              <span class="quick-link__title">Gestión de usuario</span>
+              <span class="quick-link__meta"
+                >Crear perfiles para administrar el sistema</span
+              >
+            </a>
+          </div>
+        </article>
+
+        <article class="panel-card">
+          <div class="panel-card__header">
+            <p class="eyebrow">CATEGORÍAS</p>
+            <h2>Distribución actual</h2>
+          </div>
+          <ul class="category-list">
+            <li><span>Calzado</span><strong>42</strong></li>
+            <li><span>Ropa</span><strong>38</strong></li>
+            <li><span>Equipos</span><strong>27</strong></li>
+            <li><span>Accesorios</span><strong>25</strong></li>
+            <li><span>Suplementos</span><strong>10</strong></li>
+            <li><span>Otros</span><strong>6</strong></li>
+          </ul>
+        </article>
+
+        <article class="panel-card panel-card--notice">
+          <div class="panel-card__header">
+            <p class="eyebrow">ALERTAS</p>
+            <h2>Atención del día</h2>
+          </div>
+          <div class="alert-list">
+            <div class="alert-item">
+              <span class="alert-dot alert-dot--yellow"></span>
+              <p>8 productos están cerca de agotarse y necesitan revisión.</p>
+            </div>
+            <div class="alert-item">
+              <span class="alert-dot alert-dot--red"></span>
+              <p>La camiseta Under Armor está agotada actualmente.</p>
+            </div>
+            <div class="alert-item">
+              <span class="alert-dot alert-dot--green"></span>
+              <p>El inventario fue consultado correctamente por el equipo.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--solid">
+      © 2026 High Sport. Todos los derechos reservados. |
+      <a href="#">Política de privacidad</a> |
+      <a href="#">Términos y condiciones</a> | <a href="#">Soporte</a> |
+      Contacto: soporte@highsport.com
+    </footer>
+  </body>
+</html>

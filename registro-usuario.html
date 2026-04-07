@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighSport | Crear cuenta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page auth-page--register">
+    <main class="auth-shell auth-shell--register">
+      <section class="auth-card auth-card--wide">
+        <div class="brand-chip">HIGHSPORT</div>
+        <h1>Crear cuenta</h1>
+        <form class="form-grid">
+          <div>
+            <label for="nombre">NOMBRE</label>
+            <input id="nombre" type="text" placeholder="Kevin" />
+          </div>
+          <div>
+            <label for="apellido">APELLIDO</label>
+            <input id="apellido" type="text" placeholder="Sanchez" />
+          </div>
+          <div class="span-2">
+            <label for="correo">CORREO ELECTRÓNICO</label>
+            <input id="correo" type="email" placeholder="kevin@ejemplo.com" />
+          </div>
+          <div class="span-2">
+            <label for="rol">ROL</label>
+            <select id="rol">
+              <option>Administrador</option>
+              <option>Supervisor</option>
+              <option>Auxiliar</option>
+            </select>
+          </div>
+          <div>
+            <label for="password">CONTRASEÑA</label>
+            <input id="password" type="password" placeholder="••••••••••••" />
+          </div>
+          <div>
+            <label for="confirmar">CONFIRMAR</label>
+            <input id="confirmar" type="password" placeholder="••••••••••••" />
+          </div>
+          <div class="form-actions span-2">
+            <a class="btn btn-secondary" href="index.html">Cancelar</a>
+            <a class="btn btn-primary" href="panel.html">Crear cuenta</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--transparent">
+      © 2026 High Sport. Todos los derechos reservados. |
+      <a href="#">Política de privacidad</a> |
+      <a href="#">Términos y condiciones</a> | <a href="#">Soporte</a> |
+      Contacto: soporte@highsport.com
+    </footer>
+  </body>
+</html>

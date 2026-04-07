@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighSport | Inventario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="panel-page">
+    <header class="topbar">
+      <a class="wordmark" href="panel.html"><span>HIGH</span>SPORT</a>
+      <nav class="topnav">
+        <a href="panel.html">Dashboard</a>
+        <a class="active" href="dashboard.html">Inventario</a>
+        <a href="registro-usuario.html">Usuarios</a>
+      </nav>
+      <div class="avatar">KS</div>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="section-intro">
+        <div>
+          <p class="eyebrow">MODULO</p>
+          <h1>Inventario de Productos</h1>
+        </div>
+        <a class="btn btn-outline-red" href="nuevo-producto.html"
+          >+ Nuevo producto</a
+        >
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <span>TOTAL PRODUCTOS</span>
+          <strong>148</strong>
+        </article>
+        <article class="stat-card">
+          <span>STOCK BAJO</span>
+          <strong class="text-red">12</strong>
+        </article>
+        <article class="stat-card">
+          <span>CATEGORIAS</span>
+          <strong>6</strong>
+        </article>
+        <article class="stat-card">
+          <span>VALOR TOTAL</span>
+          <strong>$24.450.600</strong>
+        </article>
+      </section>
+
+      <section class="filters">
+        <input type="text" placeholder="Buscar producto..." />
+        <select>
+          <option>Todas las categorias</option>
+          <option>Calzado</option>
+          <option>Equipos</option>
+          <option>Ropa</option>
+          <option>Accesorios</option>
+        </select>
+        <button class="btn btn-primary" type="button">Filtrar</button>
+      </section>
+
+      <section class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Categoria</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Producto">Nike Air Max 270</td>
+              <td data-label="Categoria">Calzado</td>
+              <td data-label="Precio">$380.000</td>
+              <td data-label="Cantidad">42</td>
+              <td data-label="Estado">
+                <span class="pill pill-green">Disponible</span>
+              </td>
+              <td class="actions" data-label="Acciones">
+                <a class="mini-btn mini-btn-light" href="editar-producto.html"
+                  >Editar</a
+                >
+                <button class="mini-btn mini-btn-danger" type="button">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Producto">Balon Adidas Pro</td>
+              <td data-label="Categoria">Equipos</td>
+              <td data-label="Precio">$120.000</td>
+              <td data-label="Cantidad">8</td>
+              <td data-label="Estado">
+                <span class="pill pill-yellow">Stock bajo</span>
+              </td>
+              <td class="actions" data-label="Acciones">
+                <a class="mini-btn mini-btn-light" href="editar-producto.html"
+                  >Editar</a
+                >
+                <button class="mini-btn mini-btn-danger" type="button">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Producto">Camiseta Under Armor</td>
+              <td data-label="Categoria">Ropa</td>
+              <td data-label="Precio">$95.000</td>
+              <td data-label="Cantidad">0</td>
+              <td data-label="Estado">
+                <span class="pill pill-red">Agotado</span>
+              </td>
+              <td class="actions" data-label="Acciones">
+                <a class="mini-btn mini-btn-light" href="editar-producto.html"
+                  >Editar</a
+                >
+                <button class="mini-btn mini-btn-danger" type="button">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Producto">Guantes Everlast</td>
+              <td data-label="Categoria">Accesorios</td>
+              <td data-label="Precio">$180.000</td>
+              <td data-label="Cantidad">25</td>
+              <td data-label="Estado">
+                <span class="pill pill-green">Disponible</span>
+              </td>
+              <td class="actions" data-label="Acciones">
+                <a class="mini-btn mini-btn-light" href="editar-producto.html"
+                  >Editar</a
+                >
+                <button class="mini-btn mini-btn-danger" type="button">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-footer">
+          <p>Mostrando 4 de 148 productos</p>
+          <div class="pagination">
+            <button class="mini-btn mini-btn-light" type="button">Atras</button>
+            <button class="mini-btn mini-btn-danger" type="button">
+              Siguiente
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--solid">
+      © 2026 High Sport. Todos los derechos reservados. |
+      <a href="#">Politica de privacidad</a> |
+      <a href="#">Terminos y condiciones</a> | <a href="#">Soporte</a> |
+      Contacto: soporte@highsport.com
+    </footer>
+  </body>
+</html>
